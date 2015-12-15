@@ -1,20 +1,20 @@
 // zabbix:x:502:503::/home/zabbix:/bin/bash
-#include <unistd.h>
-#include <sys/types.h>
+#include <stdlib.h>
 #include <stdio.h>
+#include <pwd.h>
 
 int main (void) {
- char buf[3];
- struct user_info {
-	char name[8];
-	char pass[8];
-	int uid;
-	int guid;
-	char gecos[50];
-	char dir[50];
-	char shell[50];
- };
- sprintf( buf, "%d", getuid());
- printf("%s\n",buf); 
+ register struct passwd *pw;
+ register uid_t uid;
+ int c;
+
+ uid = geteuid ();
+ pw = getpwuid (uid);
+  if (pw)
+  {
+	puts (pw->pw_name);
+//	puts (pw);
+  }
+
  return 0;
 }
