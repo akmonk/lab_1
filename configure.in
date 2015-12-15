@@ -4,7 +4,6 @@
 AC_PREREQ([2.68])
 AC_INIT([whoami], [1.0], [akmonk@mail.ru])
 AC_CONFIG_SRCDIR([whoami.c])
-AC_CONFIG_HEADERS([config.h])
 
 # Checks for programs.
 AC_PROG_CC
