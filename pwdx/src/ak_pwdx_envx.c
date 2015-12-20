@@ -5,6 +5,7 @@
 
 // длина каталога
 #define MAX_PATH_SIZE 128
+// размер данных для переменных окружения
 #define MAX_ENV_SIZE 4096
 
 int pwdx (char * pid)

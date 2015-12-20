@@ -6,18 +6,18 @@ all: pwdx envx
 .c.o:
 	$(CC) -c -o $@ $<
 
-ak_pwdx_pwdenv.so:
-	$(CC) -fPIC -shared -o ak_pwdx_pwdenv.so ak_pwdx_pwdenv.c
+ak_pwdx_envx.so:
+	$(CC) -fPIC -shared -o ak_pwdx_envx.so ak_pwdx_envx.c
 
-pwdx: pwdx.c ak_pwdx_pwdenv.so
+pwdx: pwdx.c ak_pwdx_envx.so
 	$(CC) -o pwdx $^
 
-envx: envx.c ak_pwdx_pwdenv.so
+envx: envx.c ak_pwdx_envx.so
 	$(CC) -o envx $^
 clean:
 	rm -f *.so *.o
 
-install-lib: ak_pwdx_pwdenv.so
+install-lib: ak_pwdx_envx.so
 	mkdir -p $(LIBDIR)
-	install ak_pwdx_pwdenv.so $(LIBDIR)
+	install ak_pwdx_envx.so $(LIBDIR)
 	ldconfig
