@@ -27,3 +27,7 @@ int pwdx (char * pid)
   free(path_buf);
   return 0;
 }
+
+int envx (char * pid)
+{
+}
