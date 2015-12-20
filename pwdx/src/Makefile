@@ -1,7 +1,7 @@
 CC = gcc
 LIBDIR = /lib
 
-all: pwdx
+all: pwdx envx
 
 .c.o:
 	$(CC) -c -o $@ $<
