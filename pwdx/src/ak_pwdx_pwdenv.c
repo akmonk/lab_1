@@ -1,9 +1,8 @@
-/*#include "stdlib.h"
+#include "stdlib.h"
 #include "string.h"
-#include "errno.h"*/
 #include "stdio.h"
+#include "errno.h"
 
-/*
 // длина каталога
 #define MAX_PATH_SIZE 128
 
@@ -28,23 +27,3 @@ int pwdx (char * pid)
   free(path_buf);
   return 0;
 }
-*/
-int main(int argc, char *argv[])
-
-{
-  int i;
-  char *pid;
-  // переданы ли pid
-  if (argc < 2)
-  {
-    printf("Ошибка. Введите pwdx pid1 [pid2]\n");
-    return 1;
-  }
-  else
-  {
-    for (i=1;i<argc;i++)
-    pwdx(argv[i]);
-  }
-  return 0;
-}
-
