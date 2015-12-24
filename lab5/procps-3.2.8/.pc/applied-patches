@@ -77,3 +77,4 @@ dynamic_file2str.patch
 ignore_eaccess.patch
 zeroreadsegv.patch
 ignore_erofs.patch
+fix-sched_getscheduler-in-ps
