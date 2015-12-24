@@ -1,0 +1,2 @@
+misc:Depends=upstart-job
+shlibs:Depends=libc6 (>= 2.14), libncurses5 (>= 5.5-5~), libncursesw5 (>= 5.6+20070908), libtinfo5, procps

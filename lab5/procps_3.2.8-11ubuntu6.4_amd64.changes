@@ -1,0 +1,35 @@
+Format: 1.8
+Date: Tue, 10 Feb 2015 13:42:15 -0500
+Source: procps
+Binary: procps libproc-dev
+Architecture: source amd64
+Version: 1:3.2.8-11ubuntu6.4
+Distribution: precise
+Urgency: medium
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Changed-By: Stéphane Graber <stgraber@ubuntu.com>
+Description: 
+ libproc-dev - library for accessing process information from /proc
+ procps     - /proc file system utilities
+Launchpad-Bugs-Fixed: 1419554
+Changes: 
+ procps (1:3.2.8-11ubuntu6.4) precise; urgency=medium
+ .
+   * ignore_erofs.patch: Same as ignore_eaccess but for the case where
+     part of /proc is read/only. (LP: #1419554)
+Checksums-Sha1: 
+ af40d3931d2dff0a29ea56ef3ff4346630613afe 1128 procps_3.2.8-11ubuntu6.4.dsc
+ ceb9640a3fb86cbf0aa6abdf93427db4961cfdb9 108430 procps_3.2.8-11ubuntu6.4.debian.tar.gz
+ 773244acc4bb18bfefb39c08f6240b08ec05d473 257698 procps_3.2.8-11ubuntu6.4_amd64.deb
+ 65043c1fb689763f2ea1b49ce680719558d13a9c 72052 libproc-dev_3.2.8-11ubuntu6.4_amd64.deb
+Checksums-Sha256: 
+ 0514ceb14f5a0e00333977d15dc8cfb11875fcbc2361d2149c52123b90c8f8a3 1128 procps_3.2.8-11ubuntu6.4.dsc
+ 866b48eda25b671be735327992cea0e7070d48920102bd95cc7e09752db8b6c9 108430 procps_3.2.8-11ubuntu6.4.debian.tar.gz
+ 2de47a71ea38326bc368eff70b9177f46258832e1cfdc4cd1e7cae3795ba89e0 257698 procps_3.2.8-11ubuntu6.4_amd64.deb
+ 78d0e6556434d21082b502a16bab47db933c73505560b08348a3bf8b6b67f29c 72052 libproc-dev_3.2.8-11ubuntu6.4_amd64.deb
+Files: 
+ 818f207282a38eb2b6ec55d81ab4cae3 1128 admin important procps_3.2.8-11ubuntu6.4.dsc
+ bbb98640c2780788c64e998683f43649 108430 admin important procps_3.2.8-11ubuntu6.4.debian.tar.gz
+ c1b16b15031b54de9b8c074866c8c455 257698 admin important procps_3.2.8-11ubuntu6.4_amd64.deb
+ a8b0b20f9eb7e44490b93bc1f673ed71 72052 libdevel optional libproc-dev_3.2.8-11ubuntu6.4_amd64.deb
+Original-Maintainer: Craig Small <csmall@debian.org>
